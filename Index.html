@@ -1,0 +1,261 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Меню еды</title>
+  <link rel="stylesheet" href="">
+
+  <style>
+    body {
+      background-image: url(img/image_2025-05-14_22-14-50.png);
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h2 {
+      margin-top: 30px;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 50px;
+      margin: 20px;
+    }
+    .dish {
+      width: 160px;
+      margin-top: 10%;
+    }
+    .dish img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 5px 0;
+    }
+    .controls button {
+      padding: 5px 10px;
+      font-size: 18px;
+    }
+    .order-btn {
+      margin: 30px auto;
+      padding: 15px 30px;
+      font-size: 20px;
+      background: white;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <section class="menu-first-dishes">
+    
+  <h2 class="dishes-h2">Первое блюда</h2>
+  <nav class="menu" id="menu">
+    <nav class="dish" data-name="Фрикадельковый суп" data-price="25000">
+      <img src="img/суп с фрикадельками.png" alt="Фрикадельковый суп">
+      <p>Фрикадельковый суп<br>25 000</p>
+      <nav class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </nav>
+    </nav>
+    <nav class="dish" data-name="Куриный суп с лапшой" data-price="25000">
+      <img src="img/Суп.png" alt="Куриный суп с лапшой">
+      <p>Куриный суп с лапшой<br>25 000</p>
+      <nav class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </nav>
+    </nav>
+    <nav class="dish" data-name="Куриный суп с лапшой" data-price="25000">
+      <img src="img/Чечевичный (1).png" alt="Чечевичный суп">
+      <p>Чечевичный суп<br>25 000</p>
+      <nav class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </nav>
+    </nav>
+    
+
+    <nav class="dish" data-name="Куриный суп с лапшой" data-price="25000">
+      <img src="img/Суп из говяжьего языка.png" alt="Чечевичный суп">
+      <p>Суп из говяьего языка<br>25 000</p>
+      <nav class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </nav>
+    </nav>
+
+
+    <nav class="dish" data-name="Куриный суп с лапшой" data-price="25000">
+      <img src="img/Окршока.png" alt="Чечевичный суп">
+      <p>Окрошка<br>25 000</p>
+      <nav class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </nav>
+    </nav>
+    
+  </nav>
+</section>
+
+
+
+  <section class="menu-second-dishes">
+    <h2 class="dishes-h2">Второе блюда</h2>
+    <nav class="menu">
+        <nav class="dish" data-name="Курица с грибами" data-price="30000">
+            <img src="img/Курица в сливкаах.png" alt="Курица с грибами">
+            <p>Курица с грибами в сливочном соусе<br>30 000</p>
+        <nav class="controls">
+            <button onclick="changeQty(this, -1)">-</button>
+            <span>0</span>
+            <button onclick="changeQty(this, 1)">+</button>
+        </nav>
+    </nav>
+
+
+    <nav class="dish" data-name="Бифштекс" data-price="30000">
+      <img src="img/Бифштекси.png" alt="Бифштекс">
+      <p>Бифштекс<br>30 000</p>
+      <nav class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+
+        <button onclick="changeQty(this, 1)">+</button>
+      </nav>
+    </nav>
+
+
+    <nav class="dish" data-name="Бефстроганов" data-price="30000">
+      <img src="img/Бефстроганов.png" alt="Бефтроганов">
+      <p>Бефстроганов<br>30 000</p>
+      <nav class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </nav>
+    </nav>
+
+
+
+
+    <nav class="dish" data-name="Бифштекс" data-price="30000">
+      <img src="img/Вагури.png" alt="Бифштекс">
+      <p>Телятина с грибами в сливочном соусе<br>30 000</p>
+      <nav class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </nav>
+    </nav>
+
+    <nav class="dish" data-name="Бифштекс" data-price="30000">
+      <img src="img/Говядина в сливках.png" alt="Бифштекс">
+      <p>Тушенка<br>30 000</p>
+      <nav class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </nav>
+    </nav>
+
+    <nav class="dish" data-name="Бифштекс" data-price="30000">
+      <img src="img/Лагман (1).png" alt="Бифштекс">
+      <p>Лагман<br>30 000</p>
+      <nav class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </nav>
+    </nav>
+
+    <nav class="dish" data-name="Бифштекс" data-price="30000">
+      <img src="img/Лагман (2).png" alt="Бифштекс">
+      <p>Жаренный лагман<br>30 000</p>
+      <nav class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </nav>
+    </nav>
+
+
+    <nav class="dish" data-name="Бифштекс" data-price="30000">
+      <img src="img/Плов.png" alt="Бифштекс">
+      <p>Плов<br>30 000</p>
+      <nav class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </nav>
+    </nav>
+
+    
+    </section>
+
+ 
+  
+  
+  
+  <button class="order-btn" onclick="sendOrder()">Отправить заказ</button>
+
+   <script>
+    function changeQty(btn, delta) {
+      const span = btn.parentNode.querySelector('span');
+      let qty = parseInt(span.textContent);
+      qty = Math.max(0, qty + delta);
+      span.textContent = qty;
+    }
+
+    function sendOrder() {
+      const dishes = document.querySelectorAll('.dish');
+      let order = [];
+      let total = 0;
+      dishes.forEach(dish => {
+        const qty = parseInt(dish.querySelector('span').textContent);
+        if (qty > 0) {
+          const name = dish.dataset.name;
+          const price = parseInt(dish.dataset.price);
+          total += price * qty;
+          order.push('${name} - ${price.toLocaleString()} x ${qty}');
+        }
+      });
+
+      const message = 'Ваш заказ:\n${order.join(\n)}\nОбщая стоимость: ${total.toLocaleString()'};
+
+      const telegramBotToken = 'YOUR_BOT_TOKEN';
+      const telegramChatId = 'YOUR_CHAT_ID';
+      fetch('https://api.telegram.org/bot${telegramBotToken}/sendMessage', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          chat_id: telegramChatId,
+          text: message
+        })
+      });
+    
+  </script>
+    
+  </body>
+</html>
